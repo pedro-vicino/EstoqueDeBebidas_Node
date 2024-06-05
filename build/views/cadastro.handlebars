@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <!-- Import Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            box-sizing: border-box;
+            overflow: hidden;
+            /* Prevent body from scrolling */
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            max-height: 90vh;
+            /* Adjust this value as needed */
+            overflow-y: auto;
+            text-align: center;
+        }
+
+        .container h2 {
+            font-family: 'Montserrat Alternates', sans-serif;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            background: #03a9f4;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background: #0288d1;
+        }
+
+        .back-btn {
+            background-color: #555555;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .back2-btn {
+            background-color: #ff0000;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: block;
+            margin-top: 10px;
+        }
+
+        h2 {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Cadastro</h2>
+        <form method="POST" action="/adiciona">
+            <div class="form-group">
+                <label>Tipo da Bebida:</label>
+                <input type="text" name="tipo" placeholder="Digite...">
+            </div>
+            <div class="form-group">
+                <label>Marca da Bebida:</label>
+                <input type="text" name="marca" placeholder="Digite...">
+            </div>
+            <div class="form-group">
+                <label>Fornecedor da Bebida:</label>
+                <input type="text" name="fornecedor" placeholder="Digite...">
+            </div>
+            <div class="form-group">
+                <label>Preço de Compra da Bebida:</label>
+                <input type="text" name="preco_compra" placeholder="Digite...">
+            </div>
+            <div class="form-group">
+                <label>Preço de Venda da Bebida:</label>
+                <input type="text" name="preco_venda" placeholder="Digite...">
+            </div>
+            <div class="form-group">
+                <label>Quantidade:</label>
+                <input type="number" name="quantidade" placeholder="Digite...">
+            </div>
+            <div class="form-group">
+                <label>Data de Entrada da Bebida:</label>
+                <input type="date" name="data_entrada" placeholder="Digite...">
+            </div>
+            <div class="form-group">
+                <label>Data de Validade da Bebida:</label>
+                <input type="date" name="data_validade" placeholder="Digite...">
+            </div>
+
+            <!-- Botão para submeter o formulário -->
+            <button type="submit">Cadastrar</button>
+        </form>
+        <!-- Botão de Voltar -->
+        <a href="/" class="back2-btn">Lista</a>
+
+    </div>
+
+</body>
+
+</html>
